@@ -1,0 +1,14 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid justify-content-end">
+        <div class="d-flex w-100">
+            <a class="navbar-brand centered" href="#">Nombre colegio</a>
+            <button class="hamburger ms-auto" type="button" (click)="onMenuClick()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<app-side-menu [hidden]="!showSideBar"></app-side-menu>
