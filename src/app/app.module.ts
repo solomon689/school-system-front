@@ -6,6 +6,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 FullCalendarModule.registerPlugins([
   dayGridPlugin,
@@ -19,7 +20,8 @@ FullCalendarModule.registerPlugins([
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    FullCalendarModule
+    FullCalendarModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
