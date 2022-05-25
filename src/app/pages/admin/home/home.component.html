@@ -1,0 +1,18 @@
+<header>
+    <app-navbar></app-navbar>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-lg-3 mt-5" *ngFor="let member of schoolMembers">
+                <app-personal-info
+                    [quantity]=100
+                    [title]="member"
+                ></app-personal-info>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <app-admin-calendar></app-admin-calendar>
+            </div>
+        </div>
+    </div>
+</main>

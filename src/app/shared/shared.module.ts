@@ -14,7 +14,8 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
     CommonModule
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    SideMenuComponent
   ]
 })
 export class SharedModule { }
